@@ -1,5 +1,5 @@
 ## **Misk Data Science Immersive**
-#Assignment: Group Assignment #2 (Tourists)
+Assignment: Group Assignment #2 (Tourists)
 
 ## Inside Airbnb
 
