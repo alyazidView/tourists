@@ -24,7 +24,9 @@ To study the Airbnb hospitality market for an investor interested in purchasing 
 
 # Authors
 
-- Rehab Alaswad
-- Rawan Aljohani
 - Alyazid Alhumaydani
 - Ibrahim Alghrabi
+- Rehab Alaswad
+- Rawan Aljohani
+
+
