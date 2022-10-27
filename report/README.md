@@ -1,7 +1,5 @@
-[Slides](./slides.html)
-
-
 ## Reports
-- 1 Quarto Markdown File, [Guide](https://quarto.org/docs/get-started/).
-- 1 HTML Slide (for presentation)
-- 1 HTML Document (for gh-pages)
+Contents:
+- Markdown files (slides.qmd & report.qmd)
+- HTML files ((slides.html & report.html)
+- libraries
