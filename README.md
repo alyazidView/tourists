@@ -20,7 +20,7 @@ To study the Airbnb hospitality market for an investor interested in purchasing 
 ## Sources
 
 - Supplying [dataset](https://open.canada.ca/data/en/dataset/763fe3b8-cdc3-4b8a-bbbd-a0a9bc587c56)
-- [Distance calculation code](https://www.geeksforgeeks.org/program-distance-two-points-earth/
+- [Distance calculation code](https://www.geeksforgeeks.org/program-distance-two-points-earth/)
 
 # Authors
 
