@@ -114,7 +114,7 @@ df = df[df['minimum_nights']< 11000]
 df = df[df['price'] < 4000]
 ```
 
-Both of these listing are private rooms, it seems those entries are an error so we will remove them. Also in this study I will only include listing of price less than 4000 $, since they only represent 15 observation out of 13600.
+Both of these listing are private rooms, it seems those entries are an error so we will remove them. Also in this study we will only include listing of price less than 4000 $, since they only represent 15 observation out of 13600.
 
 Distinct neighbourhood in the datasets.
 ```{python}
@@ -202,7 +202,7 @@ fig.show()
 
 \
 
-We note the price distribution have high variation. The distribution is postively skewed, so the mean price may not be a godd representative of the data. 
+We note the price distribution have high variation. The distribution is postively skewed, so the mean price may not be a good representative of the data. 
 
 # Minimum Nights Distributions:
 Let's have a look at the distribution of minimum nights of the listings, showing only up to minimum of 180 nights:
