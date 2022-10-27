@@ -14,14 +14,14 @@ Assignment: Group Assignment #2 (Tourists)
 
 ## Scenario
 
-To study the Airbnb hospitality market for an investor interested in purchasing or building a property in one of the tourist twons near great nature.
+To study the Airbnb hospitality market for an investor interested in purchasing or building a property in **Montreal City, Canada** near great nature.
 
 ## Sources
 
 - Supplying [dataset](https://open.canada.ca/data/en/dataset/763fe3b8-cdc3-4b8a-bbbd-a0a9bc587c56)
 - [Distance calculation code](https://www.geeksforgeeks.org/program-distance-two-points-earth/)
 - [**Inside Airbnb**](insideairbnb.com)
-- 
+
 # Authors
 
 - Alyazid Alhumaydani
