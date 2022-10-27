@@ -14,7 +14,7 @@ Assignment: Group Assignment #2 (Tourists)
 
 ## Scenario
 
-To study the Airbnb hospitality market for an investor interested in purchasing or building a property in **Montreal City, Canada** near great nature.
+- Analyze the Airbnb hospitality market for an investor interested in purchasing or building a property in **Montreal City, Canada** near great nature.
 
 ## Sources
 
