@@ -1,11 +1,11 @@
 ## **Misk Data Science Immersive**
 Assignment: Group Assignment #2 (Tourists)
 
-[Report]()
+[Report]() (offline)
 
-[Slides]()
+[Slides]() (offline)
 
-[Codebook](./src/Codebook.ipynb)
+[Codebook](./src/Codebook.ipynb) (running)
 
 ## Inside Airbnb
 
