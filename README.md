@@ -9,7 +9,7 @@ Assignment: Group Assignment #2 (Tourists)
 
 # **Dataset**
 
-## [**Inside Airbnb**](insideairbnb.com)
+### [**Inside Airbnb**](insideairbnb.com)
 - “Inside Airbnb is a mission driven project that provides data and advocacy about Airbnb's impact on residential communities. We work towards a vision where data and information empower communities to understand, decide and control the role of renting residential homes to tourists”
 
 ## Scenario
