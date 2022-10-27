@@ -1,0 +1,583 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  ignorenonframetext,
+]{beamer}
+\usepackage{pgfpages}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamercolor{caption name}{fg=normal text.fg}
+\beamertemplatenavigationsymbolsempty
+% Prevent slide breaks in the middle of a paragraph
+\widowpenalties 1 10000
+\raggedbottom
+\setbeamertemplate{part page}{
+  \centering
+  \begin{beamercolorbox}[sep=16pt,center]{part title}
+    \usebeamerfont{part title}\insertpart\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{section page}{
+  \centering
+  \begin{beamercolorbox}[sep=12pt,center]{part title}
+    \usebeamerfont{section title}\insertsection\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{subsection page}{
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center]{part title}
+    \usebeamerfont{subsection title}\insertsubsection\par
+  \end{beamercolorbox}
+}
+\AtBeginPart{
+  \frame{\partpage}
+}
+\AtBeginSection{
+  \ifbibliography
+  \else
+    \frame{\sectionpage}
+  \fi
+}
+\AtBeginSubsection{
+  \frame{\subsectionpage}
+}
+
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\newif\ifbibliography
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+\usepackage{caption}
+% Make caption package work with longtable
+\makeatletter
+\def\fnum@table{\tablename~\thetable}
+\makeatother
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\makeatletter
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[many]{tcolorbox}}
+\makeatother
+\makeatletter
+\@ifundefined{shadecolor}{\definecolor{shadecolor}{rgb}{.97, .97, .97}}
+\makeatother
+\makeatletter
+\makeatother
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Tourist - Airbnb Canada Quebec},
+  pdfauthor={Rehab Alaswad; Rawan Aljohani; Alyazid Alhumaydani; Ibrahim Alghrabi},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Tourist - Airbnb Canada Quebec}
+\author{Rehab Alaswad \and Rawan Aljohani \and Alyazid
+Alhumaydani \and Ibrahim Alghrabi}
+\date{}
+
+\begin{document}
+\frame{\titlepage}
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[frame hidden, interior hidden, enhanced, borderline west={3pt}{0pt}{shadecolor}, sharp corners, boxrule=0pt, breakable]}{\end{tcolorbox}}\fi
+
+\begin{frame}{Introduction:}
+\protect\hypertarget{introduction}{}
+In this report, we will study the Airbnb Canada dataset and try to make
+recommendation of a listing to an investor based on how close the
+listing is to nature.
+
+\begin{block}{About the Dataset:}
+\protect\hypertarget{about-the-dataset}{}
+The dataset was obtained from Inside Airbnb, and it provides data and
+advocacy about Airbnb's impact on resdential communities. Inside Airbnb
+provides data for many countries but we chose Canda becuase of great
+nature in Canada.
+\end{block}
+
+\begin{block}{Our Scenario}
+\protect\hypertarget{our-scenario}{}
+To study the Airbnb hospitality market for an investor interested in
+purchasing or building a property in one of the tourist twons near great
+nature.
+\end{block}
+
+\begin{block}{Data Dictionary:}
+\protect\hypertarget{data-dictionary}{}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.4762}}
+  >{\centering\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5238}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+\emph{Variable}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+\emph{Description}
+\end{minipage} \\
+\midrule()
+\endhead
+id & Airbnb's unique identifier for the listing. \\
+name & Name of the listing. \\
+host\_id & Airbnb's unique identifier for the host. \\
+host\_name & Name of the host. \\
+neighbourhood & Name of the neighbourhood. \\
+latitude & Uses the World Geodetic System (WGS84) \\
+longitude & Uses the World Geodetic System (WGS84) \\
+room\_type & Type of the listing; entire house, private room, or shared
+room. \\
+price & Price of the listing in Canadian dollars. \\
+minimum\_nights & Number of minimum stays in the listing. \\
+last\_review & The date of the last review. \\
+review\_per\_month & Number of review the listing has over the lifetime
+of the listing \\
+availability\_365 & The availability of the listing in the next 365
+days. \\
+number\_of\_review\_itm & Number of review the listing has in the past
+12 month. \\
+license & The license/permit/registration number. \\
+\bottomrule()
+\end{longtable}
+\end{frame}
+
+\begin{frame}[fragile]{Data Cleaning:}
+\protect\hypertarget{data-cleaning}{}
+First importing the data and show small sample of the dataset.
+
+\begin{tabular}{lrlrlrlrrlrrrlrrrrl}
+\toprule
+{} &                  id &                                              name &    host\_id &          host\_name &  neighbourhood\_group &                  neighbourhood &   latitude &  longitude &        room\_type &  price &  minimum\_nights &  number\_of\_reviews & last\_review &  reviews\_per\_month &  calculated\_host\_listings\_count &  availability\_365 &  number\_of\_reviews\_ltm & license \\
+\midrule
+448   &             4137045 &                       Le Marché Sainte Madeleine! &   21461906 &              Kevin &                  NaN &                   Le Sud-Ouest &  45.480030 & -73.557200 &  Entire home/apt &     80 &              31 &                282 &  2021-04-17 &               2.92 &                               1 &               330 &                      0 &     NaN \\
+4329  &            25836089 &  Charming, 4 rooms, Condo on Ste-Catherine Street &  172136210 &               Izzo &                  NaN &  Mercier-Hochelaga-Maisonneuve &  45.556320 & -73.529410 &  Entire home/apt &    457 &               2 &                 38 &  2022-08-28 &               0.79 &                               1 &               363 &                     14 &     NaN \\
+12791 &  693528462913359071 &              Welcome to ''Le Sand \& Stone Hotel'' &  474405753 &  Le Sand And Stone &                  NaN &                    Ville-Marie &  45.509439 & -73.564237 &     Private room &    130 &               1 &                  4 &  2022-09-05 &               4.00 &                              28 &               265 &                      4 &     NaN \\
+2150  &            16984430 &                   Room 301 | Maison Saint-Vincent &  113699303 &       Maisons \& Co &                  NaN &                    Ville-Marie &  45.506840 & -73.553060 &       Hotel room &    186 &               2 &                 45 &  2022-04-03 &               0.69 &                              25 &               212 &                      1 &     NaN \\
+\bottomrule
+\end{tabular}
+
+~
+
+\begin{verbatim}
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 13621 entries, 0 to 13620
+Data columns (total 18 columns):
+ #   Column                          Non-Null Count  Dtype  
+---  ------                          --------------  -----  
+ 0   id                              13621 non-null  int64  
+ 1   name                            13617 non-null  object 
+ 2   host_id                         13621 non-null  int64  
+ 3   host_name                       13620 non-null  object 
+ 4   neighbourhood_group             0 non-null      float64
+ 5   neighbourhood                   13621 non-null  object 
+ 6   latitude                        13621 non-null  float64
+ 7   longitude                       13621 non-null  float64
+ 8   room_type                       13621 non-null  object 
+ 9   price                           13621 non-null  int64  
+ 10  minimum_nights                  13621 non-null  int64  
+ 11  number_of_reviews               13621 non-null  int64  
+ 12  last_review                     11047 non-null  object 
+ 13  reviews_per_month               11047 non-null  float64
+ 14  calculated_host_listings_count  13621 non-null  int64  
+ 15  availability_365                13621 non-null  int64  
+ 16  number_of_reviews_ltm           13621 non-null  int64  
+ 17  license                         881 non-null    object 
+dtypes: float64(4), int64(8), object(6)
+memory usage: 1.9+ MB
+\end{verbatim}
+
+This datasets has a total of 13621 observation (rows), and 18 variable
+(columns). We note that the neighbourhood\_group has it all entries as
+NaN, license column also has many missing values. Since both of these
+columns are not of interest we will remove them.
+
+Lets have a look at the data type of each columns.
+
+\begin{tabular}{ll}
+\toprule
+{} &        0 \\
+\midrule
+id                             &    int64 \\
+name                           &   object \\
+host\_id                        &    int64 \\
+host\_name                      &   object \\
+neighbourhood                  &   object \\
+latitude                       &  float64 \\
+longitude                      &  float64 \\
+room\_type                      &   object \\
+price                          &    int64 \\
+minimum\_nights                 &    int64 \\
+number\_of\_reviews              &    int64 \\
+last\_review                    &   object \\
+reviews\_per\_month              &  float64 \\
+calculated\_host\_listings\_count &    int64 \\
+availability\_365               &    int64 \\
+number\_of\_reviews\_ltm          &    int64 \\
+\bottomrule
+\end{tabular}
+
+Since IDs usually are not used in mathematical operation, it would be
+wise to change them from integer variable into strings.
+
+\begin{verbatim}
+id column type: object
+id_host column type: object
+\end{verbatim}
+
+Lets look at descriptive statistic of the numerical columns:
+
+\begin{tabular}{lrrrrrrrrr}
+\toprule
+{} &      latitude &     longitude &          price &  minimum\_nights &  number\_of\_reviews &  reviews\_per\_month &  calculated\_host\_listings\_count &  availability\_365 &  number\_of\_reviews\_ltm \\
+\midrule
+count &  13621.000000 &  13621.000000 &   13621.000000 &    13621.000000 &       13621.000000 &       11047.000000 &                    13621.000000 &      13621.000000 &           13621.000000 \\
+mean  &     45.514491 &    -73.591639 &     169.029073 &       15.623523 &          23.994200 &           1.498029 &                       10.141473 &        128.566405 &               8.402760 \\
+std   &      0.032831 &      0.051336 &     958.044866 &      108.486987 &          49.724181 &           1.873254 &                       24.852071 &        133.881257 &              16.396578 \\
+min   &     45.382600 &    -73.974520 &       0.000000 &        1.000000 &           0.000000 &           0.010000 &                        1.000000 &          0.000000 &               0.000000 \\
+25\%   &     45.495850 &    -73.604150 &      65.000000 &        1.000000 &           1.000000 &           0.160000 &                        1.000000 &          0.000000 &               0.000000 \\
+50\%   &     45.516270 &    -73.578870 &     109.000000 &        2.000000 &           6.000000 &           0.730000 &                        2.000000 &         79.000000 &               1.000000 \\
+75\%   &     45.532630 &    -73.564110 &     176.000000 &       21.000000 &          24.000000 &           2.210000 &                        6.000000 &        258.000000 &               9.000000 \\
+max   &     45.713800 &    -73.481630 &  105634.000000 &    11684.000000 &         734.000000 &          24.730000 &                      183.000000 &        365.000000 &             251.000000 \\
+\bottomrule
+\end{tabular}
+
+~
+
+From the above table, we note the following:
+
+\begin{itemize}
+\tightlist
+\item
+  The maximum number of minimum nights 11684, where the mean is around
+  15 nights.
+\item
+  The maximum price is 105634 \$ with mean of 169 \$ and standard
+  variation of 958 \$.
+\end{itemize}
+
+Lets investigate these extream points
+
+\begin{verbatim}
+The number of observation with price greater than 4000$ is: 15
+\end{verbatim}
+
+Both of these listing are private rooms, it seems those entries are an
+error so we will remove them. Also in this study I will only include
+listing of price less than 4000 \$, since they only represent 15
+observation out of 13600.
+
+Distinct neighbourhood in the datasets.
+
+\begin{verbatim}
+Number of distinct neighbourhood: 33
+\end{verbatim}
+
+\begin{verbatim}
+array(['Le Plateau-Mont-Royal', 'Le Sud-Ouest',
+       'Villeray-Saint-Michel-Parc-Extension', 'Ville-Marie',
+       'Rosemont-La Petite-Patrie', 'LaSalle',
+       'Mercier-Hochelaga-Maisonneuve',
+       'Côte-des-Neiges-Notre-Dame-de-Grâce', 'Montréal-Ouest', 'Verdun',
+       "Baie-d'Urfé", 'Lachine', 'Côte-Saint-Luc',
+       'Ahuntsic-Cartierville', 'Saint-Laurent', 'Outremont',
+       'Pierrefonds-Roxboro', 'Saint-Léonard', 'Anjou',
+       'Rivière-des-Prairies-Pointe-aux-Trembles', 'Pointe-Claire',
+       'Mont-Royal', 'Dollard-des-Ormeaux', 'Hampstead', 'Dorval',
+       'Westmount', 'Kirkland', "L'Île-Bizard-Sainte-Geneviève",
+       'Montréal-Nord', 'Beaconsfield', 'Sainte-Anne-de-Bellevue',
+       'Montréal-Est', 'Senneville'], dtype=object)
+\end{verbatim}
+\end{frame}
+
+\begin{frame}{Supporting Dataset:}
+\protect\hypertarget{supporting-dataset}{}
+This dataset presents the place of interest in the City of Montreal. The
+only places of interest to us are parks, so we can make our
+recommendation based on listing close to nature. We will drop any
+observation of missing values.
+
+\begin{tabular}{lrlllllllrlllllrr}
+\toprule
+{} &    ID &              Famille &                  Catégorie &                                       Nom français &                                          Nom court &                  Type & Numéro &                                 rue &  Étage & Bureau &     Ville & Code postal &                 Arrondissement & Classification &  Longitude &   Latitude \\
+\midrule
+528  &   566 &  Récréatif / sportif &  Parc et autre espace vert &        Parc et site archéologique des Saints-Anges &                              Parc des Saints-Anges &                  Parc &        &                                     &      0 &        &  Montréal &     H8R 3Z7 &                        LaSalle &       niveau 2 & -73.656784 &  45.424198 \\
+1085 &  1148 &  Récréatif / sportif &  Parc et autre espace vert &  Jardin communautaire de l’Institut universitai... &  Jardin communautaire de l’Institut universitai... &  Jardin communautaire &        &  Rue de Marseille et Rue du Trianon &      0 &        &  Montréal &             &  Mercier–Hochelaga-Maisonneuve &       niveau 4 & -73.533211 &  45.589813 \\
+1654 &  1777 &  Récréatif / sportif &  Parc et autre espace vert &      Jardin communautaire l’Églantier (biologique) &                   Jardin communautaire l’Églantier &  Jardin communautaire &        &    31e Avenue et Boulevard Rosemont &      0 &        &  Montréal &             &      Rosemont–La Petite-Patrie &       niveau 4 & -73.568429 &  45.565778 \\
+2650 &  2865 &  Récréatif / sportif &  Parc et autre espace vert &               Plateau de travail (Circuit Jardins) &                                 Plateau de travail &  Jardin communautaire &   1872 &                     Rue Saint-André &      0 &        &  Montréal &             &                    Ville-Marie &       niveau 4 & -73.563608 &  45.518556 \\
+\bottomrule
+\end{tabular}
+
+There is only four parks in this dataset. We will use the latitude, and
+longitude columns of the new dataset, to make two new variable in the
+original dataset. The new columns are: `distance\_to\_nearest\_park',
+`nearest\_park'
+
+\begin{itemize}
+\tightlist
+\item
+  nearest\_park: the nearest park.
+\item
+  distance\_to\_nearest\_park: distance of the closet park in km.
+\end{itemize}
+
+The equation used will calculate the orthodromic distance (i.e.~the
+shortest distance between two points on earth's surface), meaning it
+will not take into acoount the road distance or traffic.
+
+\begin{tabular}{llllllrrlrrrlrrrrrl}
+\toprule
+{} &        id &                                              name &    host\_id & host\_name &            neighbourhood &  latitude &  longitude &        room\_type &  price &  minimum\_nights &  number\_of\_reviews & last\_review &  reviews\_per\_month &  calculated\_host\_listings\_count &  availability\_365 &  number\_of\_reviews\_ltm &  distance\_to\_nearest\_park & nearest\_park \\
+\midrule
+3164  &  21218315 &                      Cozy room downtown Montreal! &  143819680 &     Jamie &    Le Plateau-Mont-Royal &  45.50776 &  -73.57682 &     Private room &     32 &               9 &                  1 &  2017-10-09 &               0.02 &                               1 &                 0 &                      0 &                  2.545039 &       Park 4 \\
+13460 &  52334907 &  Modern retreat. Immersed in nature close to city &   46402818 &     Scott &  Sainte-Anne-de-Bellevue &  45.39960 &  -73.96234 &  Entire home/apt &    265 &               7 &                  5 &  2022-04-01 &               0.58 &                               1 &               149 &                      5 &                 38.636841 &       Park 1 \\
+\bottomrule
+\end{tabular}
+\end{frame}
+
+\begin{frame}[fragile]{EDA:}
+\protect\hypertarget{eda}{}
+\begin{block}{Price Distribution:}
+\protect\hypertarget{price-distribution}{}
+We would like the distribution of price, where the distribution is
+located and how much is the spread.
+
+\begin{verbatim}
+Unable to display output for mime type(s): text/html
+\end{verbatim}
+
+\begin{verbatim}
+Unable to display output for mime type(s): text/html
+\end{verbatim}
+
+\hfill\break
+
+We note the price distribution have high variation. The distribution is
+postively skewed, so the mean price may not be a godd representative of
+the data.
+\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Minimum Nights Distributions:}
+\protect\hypertarget{minimum-nights-distributions}{}
+Let's have a look at the distribution of minimum nights of the listings,
+showing only up to minimum of 180 nights:
+
+\begin{verbatim}
+Unable to display output for mime type(s): text/html
+\end{verbatim}
+
+~ We can see that, most listing rent from 1 \textasciitilde{} 3 nights,
+then there are spike in listings with integer multiple of 30 days
+(i.e.~30, 60, 90 days).
+\end{frame}
+
+\begin{frame}[fragile]{Listing and Parks Locations on Map:}
+\protect\hypertarget{listing-and-parks-locations-on-map}{}
+We would like how the listing is distributed on the map, and where the
+location of the parks in the area.
+
+\begin{verbatim}
+<folium.folium.Map at 0x13761cb20>
+\end{verbatim}
+
+~
+
+The heatmap represent the concentration of listing, where the green icon
+represent the parks. We can see the park number 4 is overlapping with
+high concetration of listing. After seeing what it's look on the map, we
+would like to quantify the results, and make a recommendations.
+\end{frame}
+
+\begin{frame}[fragile]{Nearest Parks and Distance to Nearest Parks:}
+\protect\hypertarget{nearest-parks-and-distance-to-nearest-parks}{}
+Lets have a look at the new columns descriptive statistic:
+
+\begin{verbatim}
+count    13605.000000
+mean         5.463882
+std          4.786292
+min          0.019696
+25%          2.480004
+50%          4.250960
+75%          7.183879
+max         41.689533
+Name: distance_to_nearest_park, dtype: float64
+\end{verbatim}
+
+\begin{verbatim}
+Unable to display output for mime type(s): text/html
+\end{verbatim}
+
+~ Note most llisting have nearest park Note that the distance between
+most listing and their respective nearest park are around 5.5 km. Also,
+the range of distance to nearest park is from 20 m up to 41.7 km.
+
+Lets see what park is close to most listing
+
+\begin{verbatim}
+Unable to display output for mime type(s): text/html
+\end{verbatim}
+
+\hfill\break
+
+We see that park number 4 has the highest nearest listings, then park 3
+with significt drop from 10000 to 2000 listings, then park 2, and
+finally park number 1.
+
+~
+
+Afterward, we would like to look the nearest neighbourhood to any park.
+We will use the mean of distance to nearest park for each neighbourhood,
+and show the six lowest distance mean.
+
+\begin{verbatim}
+Unable to display output for mime type(s): text/html
+\end{verbatim}
+
+~ The color in the above grpah represent the number of listing in the
+neighbourhood. As shown, Le Plateau-Mont-Royal has the lowest mean of
+all neighbourhood.
+\end{frame}
+
+\begin{frame}{Conclusion}
+\protect\hypertarget{conclusion}{}
+In conclusion, we use two datasets acquired from both the Inside Airbnb,
+and canada goverment website. We were able to analyzed the data
+available. Since the investor want the listing close to parks, we would
+recommend investing on listing from the following neighbourhoods:
+
+\begin{enumerate}
+[1)]
+\tightlist
+\item
+  Le Plateau-Mont-Royal
+\item
+  Ville-Marie
+\item
+  Mercier-Hochelaga-Maisonneuve
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Sources}
+\protect\hypertarget{sources}{}
+\begin{itemize}
+\tightlist
+\item
+  \href{http://insideairbnb.com/explore}{Explore}~or~\href{http://insideairbnb.com/get-the-data}{Get}~the
+  data
+\item
+  Read~\href{http://insideairbnb.com/data-policies}{Data Policies}
+\item
+  Make a~\href{http://insideairbnb.com/data-requests}{Data Request}
+\item
+  Read~\href{http://insideairbnb.com/data-assumptions}{Data Assumptions}
+\item
+  View
+  the~\href{https://docs.google.com/spreadsheets/d/1iWCNJcSutYqpULSQHlNyGInUvHg2BoUGoNRIGa6Szc4/edit?usp=sharing}{Data
+  Dictionary}
+\item
+  Join the~\href{http://insideairbnb.com/data-community}{Data Community}
+\item
+  Supplying
+  \href{https://open.canada.ca/data/en/dataset/763fe3b8-cdc3-4b8a-bbbd-a0a9bc587c56}{dataset}
+\item
+  \href{https://www.geeksforgeeks.org/program-distance-two-points-earth/}{Distance
+  calculation code}
+\end{itemize}
+\end{frame}
+
+
+
+\end{document}
