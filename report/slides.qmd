@@ -217,7 +217,7 @@ park_list = ['Park 1', "Park 2", "Park 3", 'Park 4']
 
 for i , el in enumerate(obs):
     #folium.CircleMarker(el[0:2], radius=15, color='#000000', fill_color='#000000').add_to(map_osm)
-    folium.Marker(el, popup=park_list[i], icon=folium.Icon(icon='tree', prefix= 'fa', color='green')).add_to(map_osm)
+    folium.Marker(el, popup=park_list[i]).add_to(map_osm)
 #FastMarkerCluster(data=obs).add_to(map_osm)
 
 map_osm
