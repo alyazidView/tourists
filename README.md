@@ -1,6 +1,6 @@
 ## **Misk Data Science Immersive**
 Assignment: Group Assignment #2 (Tourists)
-
+[Report in HTML format](./src/report.html)
 ## Inside Airbnb
 
 “Inside Airbnb is a mission driven project that provides data and advocacy about Airbnb's impact on residential communities.
@@ -9,19 +9,9 @@ We work towards a vision where data and information empower communities to under
 
 ## Scenario
 
-Chose one (or more) city to analyze the airbnb hospitality market for an investor interested in purchasing/building a property in one of the tourist towns near great nature. It is important for the investor for the property to be near great nature is they plan to use it for holiday. Your recommendation can be a specific property OR type of properties. e.g. what features the property should have to be successful (certain neighborhoods, number of baths, amenities… etc). 
+To study the Airbnb hospitality market for an investor interested in purchasing or building a property in one of the tourist twons near great nature.
 
-Please choose one or more of the countries/cities below:
-
-- Switzerland
-- Thailand
-- Canada
-- Spain (Valencia, Sevilla)
-- Turkey
-- UK, Scotland (Edinburgh)
-- Ireland
-
-## **Data Resources**
+## Sources
 
 - [Explore](http://insideairbnb.com/explore) or [Get](http://insideairbnb.com/get-the-data) the data
 - Read [Data Policies](http://insideairbnb.com/data-policies)
@@ -29,3 +19,11 @@ Please choose one or more of the countries/cities below:
 - Read [Data Assumptions](http://insideairbnb.com/data-assumptions)
 - View the [Data Dictionary](https://docs.google.com/spreadsheets/d/1iWCNJcSutYqpULSQHlNyGInUvHg2BoUGoNRIGa6Szc4/edit?usp=sharing)
 - Join the [Data Community](http://insideairbnb.com/data-community)
+- Supplying [dataset](https://open.canada.ca/data/en/dataset/763fe3b8-cdc3-4b8a-bbbd-a0a9bc587c56)
+- [Distance calculation code](https://www.geeksforgeeks.org/program-distance-two-points-earth/
+# Authors
+
+- Rehab Alaswad
+- Rawan Aljohani
+- Alyazid Alhumaydani
+- Ibrahim Alghrabi
