@@ -333,3 +333,13 @@ In conclusion, we use two datasets acquired from both the Inside Airbnb, and can
 2) Ville-Marie
 3) Mercier-Hochelaga-Maisonneuve
 
+# Sources 
+- [Explore](http://insideairbnb.com/explore) or [Get](http://insideairbnb.com/get-the-data) the data
+- Read [Data Policies](http://insideairbnb.com/data-policies)
+- Make a [Data Request](http://insideairbnb.com/data-requests)
+- Read [Data Assumptions](http://insideairbnb.com/data-assumptions)
+- View the [Data Dictionary](https://docs.google.com/spreadsheets/d/1iWCNJcSutYqpULSQHlNyGInUvHg2BoUGoNRIGa6Szc4/edit?usp=sharing)
+- Join the [Data Community](http://insideairbnb.com/data-community)
+- Supplying [dataset](https://open.canada.ca/data/en/dataset/763fe3b8-cdc3-4b8a-bbbd-a0a9bc587c56)
+- [Distance calculation code](https://www.geeksforgeeks.org/program-distance-two-points-earth/
+)
