@@ -24,9 +24,9 @@ Assignment: Group Assignment #2 (Tourists)
 
 ## Authors
 
-- Alyazid Alhumaydani
-- Ibrahim Alghrabi
-- Rehab Alaswad
-- Rawan Aljohani
+- [Alyazid Alhumaydani](https://github.com/alyazidView)
+- [Ibrahim Alghrabi](https://github.com/ibrahim-g7)
+- [Rehab Alaswad](https://github.com/rehabalaswad)
+- [Rawan Aljohani](https://github.com/rawanjuhani)
 
 
