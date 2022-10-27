@@ -18,9 +18,10 @@ Assignment: Group Assignment #2 (Tourists)
 
 ### Sources
 
-- Supplying [dataset](https://open.canada.ca/data/en/dataset/763fe3b8-cdc3-4b8a-bbbd-a0a9bc587c56)
+- [Inside Airbnb](insideairbnb.com)
+- [External Dataset](https://open.canada.ca/data/en/dataset/763fe3b8-cdc3-4b8a-bbbd-a0a9bc587c56)
 - [Distance calculation code](https://www.geeksforgeeks.org/program-distance-two-points-earth/)
-- [**Inside Airbnb**](insideairbnb.com)
+
 
 ## Authors
 
