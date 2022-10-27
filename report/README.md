@@ -1,4 +1,4 @@
-[Slides](./slides)
+[Slides](./slides.html)
 
 
 ## Reports
