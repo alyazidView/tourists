@@ -1,5 +1,5 @@
 ---
-title: "Tourist - Airbnb Canada Quebec"
+title: Best Neighbourhoods to Invest in for an Airbnb in Montreal City
 format: revealjs
 jupyter: python3
 author: 
@@ -52,12 +52,7 @@ To study the Airbnb hospitality market for an investor interested in purchasing 
 |last_review|The date of the last review.|
 |license| The license/permit/registration number.|
 
-```{python}
-df[(df['minimum_nights'] > 11000) | (df['price'] > 100000)]
-print(f"The number of observation with price greater than 4000$ is: {df[df['price'] >= 4000].count()['id']}")
-df = df[df['minimum_nights']< 11000]
-df = df[df['price'] < 4000]
-```
+
 
 # Data Cleaning {background="#43464B" .smaller}
 
@@ -76,17 +71,6 @@ df.drop('neighbourhood_group', axis =1, inplace=True)
 df.drop('license',axis =1, inplace=True)
 ```
 
-## Data Types. {background="#43464B" .smaller}
-```{python}
-df.dtypes
-```
-- Modification:
-```{.python}
-df['id'] = df['id'].astype(str)
-df['host_id'] = df['host_id'].astype(str)
-print(f"id column type: {df.id.dtypes}")
-print(f"id_host column type: {df.host_id.dtypes}")
-```
 ## Extreme Values{background="#43464B" .smaller}
 - Minimum Nights
 ```{python}
@@ -96,7 +80,13 @@ df.minimum_nights.describe()
 ```{python}
 df.price.describe()
 ```
+```{python}
 
+df[(df['minimum_nights'] > 11000) | (df['price'] > 100000)]
+print(f"The number of observation with price greater than 4000$ is: {df[df['price'] >= 4000].count()['id']}")
+df = df[df['minimum_nights']< 11000]
+df = df[df['price'] < 4000]
+```
 ## Distinct neighbourhoods in the datasets:{background="#43464B"}
 ```{python}
 print(f"Number of distinct neighbourhood: {df['neighbourhood'].nunique()}")
@@ -109,14 +99,16 @@ print('  |  '.join(df.neighbourhood.unique()))
 df3 = pd.read_csv('../data/canada/lieux_d_interet.csv') #load the data
 df3.dropna(how='any', inplace=True) #drop any missing value
 df3 = df3[df3['Type'].isin(["Parc", "Jardin communautaire"])] #pick only places of interest related parks
-df3 #only 4 parks
+df3.sample(2) #only 4 parks
 ```
 
 
 
-- New Variables
--- nearest_park: the nearest park.
--- distance_to_nearest_park: distance of the closet park in km.
+New Variables:
+
+- nearest_park: the nearest park.
+
+- distance_to_nearest_park: distance of the closet park in km.
 
 ```{python}
 obs  = list(zip(df3['Latitude'], df3['Longitude']))
@@ -197,7 +189,7 @@ fig.show()
 
 
 ## Listing and Parks Locations on Map:{background="#43464B" .smaller}
-We would like how the listing is distributed on the map, and where the location of the parks in the area.
+We would like to kmow how the listing is distributed on the map, and where are the location of the parks in the area.
 ```{python}
 #center the map around montreal
 map_osm = folium.Map(location=[df['latitude'].mean() , df['longitude'].mean()] , zoom_start=10)
