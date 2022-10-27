@@ -18,7 +18,7 @@ Assignment: Group Assignment #2 (Tourists)
 
 ### Sources
 
-- [Inside Airbnb](insideairbnb.com)
+- [Inside Airbnb](http://insideairbnb.com/montreal)
 - [External Dataset](https://open.canada.ca/data/en/dataset/763fe3b8-cdc3-4b8a-bbbd-a0a9bc587c56)
 
 ## Authors
