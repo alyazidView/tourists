@@ -1,7 +1,10 @@
 ## **Misk Data Science Immersive**
 Assignment: Group Assignment #2 (Tourists)
+
 [Report](./report/report.html)
+
 [Slides](./report/slides.html)
+
 ## Inside Airbnb
 
 “Inside Airbnb is a mission driven project that provides data and advocacy about Airbnb's impact on residential communities.
