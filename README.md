@@ -5,7 +5,7 @@ Assignment: Group Assignment #2 (Tourists)
 
 [Slides]()
 
-[Codebook]()
+[Codebook](./src/Codebook.ipynb)
 
 ## Inside Airbnb
 
